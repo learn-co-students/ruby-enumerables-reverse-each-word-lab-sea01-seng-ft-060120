@@ -19,3 +19,9 @@ def reverse_each_word(string)
     word.reverse
   end.join(" ")
 end
+
+#one line variation:
+
+def reverse_each_word(sentence)
+  sentence.split.collect {|word| word.reverse}.join(" ")
+end
